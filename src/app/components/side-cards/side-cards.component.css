@@ -1,0 +1,12 @@
+.side-cards img {
+  width: 100%;
+  height: 15vh;
+  border-radius: 5px;
+}
+
+.side-cards h4 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}

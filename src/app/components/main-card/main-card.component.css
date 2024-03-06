@@ -1,0 +1,22 @@
+img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-family: 'Inter', sans-serif;
+}

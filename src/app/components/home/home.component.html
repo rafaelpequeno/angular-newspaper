@@ -1,0 +1,18 @@
+<app-blog-title [title]="newsTitle"></app-blog-title>
+<app-nav></app-nav>
+<main>
+  <form class="search-bar">
+    <input type="text" placeholder="Buscar por assunto" #filter />
+    <button type="button" (click)="filterSubject(filter.value)">Buscar</button>
+  </form>
+  <section class="content-container">
+    <app-main-card class="main-card" [mainNews]="mainNews"></app-main-card>
+    <section class="side-card">
+      <app-side-cards
+        *ngFor="let noticia of newslist"
+        [news]="noticia"
+        class="secondary-card"
+      ></app-side-cards>
+    </section>
+  </section>
+</main>
