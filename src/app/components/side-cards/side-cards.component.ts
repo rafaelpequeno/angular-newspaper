@@ -7,7 +7,7 @@ import { News } from '../../news';
   imports: [],
   template: `
   <div class="side-cards">
-  <img [src]="news.urlToImage">
+  <img [src]="news.image_url">
   <h4>{{ news.title }}</h4>
 </div>`,
   styleUrl: './side-cards.component.css'
@@ -15,6 +15,6 @@ import { News } from '../../news';
 export class SideCardsComponent {
 @Input() news: News = {
   title: '',
-  urlToImage: '',
+  image_url: '',
 };
 }

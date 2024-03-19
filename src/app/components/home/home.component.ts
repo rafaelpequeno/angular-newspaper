@@ -21,7 +21,7 @@ export class HomeComponent {
   newslist: News[] = [];
   mainNews: News = {
     title: '',
-    urlToImage: ''
+    image_url: ''
   }
   newsService: NewsService = inject(NewsService);
 
