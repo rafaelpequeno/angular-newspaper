@@ -8,7 +8,7 @@ import { News } from '../../news';
   template: `
   <div class="main-card">
   <img
-    [src]='mainNews.urlToImage'
+    [src]='mainNews.image_url'
   />
   <h2>{{mainNews.title}}</h2>
   <p>{{mainNews.description}}</p>
@@ -19,7 +19,7 @@ import { News } from '../../news';
 export class MainCardComponent {
   @Input() mainNews: News = {
     title: '',
-    urlToImage: '',
+    image_url: '',
     description: ''
   }
 

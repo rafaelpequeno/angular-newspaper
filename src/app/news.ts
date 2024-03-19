@@ -1,5 +1,5 @@
 export interface News {
   title: string;
-  urlToImage: string;
+  image_url: string;
   description?: string;
 }

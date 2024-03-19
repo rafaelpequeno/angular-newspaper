@@ -4,20 +4,20 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NewsService {
-  apiKey: string = 'd8f5990ae95a4af6a6f89f06ec38a250'
+  apiKey: string = 'pub_403408d479d3a6c6270ec6540545af92bfcec'
   subject: string = 'brasil';
 
 
   async getAllNews(subject: string) {
-    const apiUrl: string = `https://newsapi.org/v2/everything?q=${subject.length > 0 ? subject.toLowerCase() : this.subject}&language=pt&sortBy=publishedAt&pageSize=7&apiKey=${this.apiKey}`
+    const apiUrl: string = `https://newsdata.io/api/1/news?apikey=${this.apiKey}&q=${subject}&size=7&language=pt`
     
     const response = await fetch(apiUrl)
     
     const data = await response.json()
     
     const returnData = {
-      firstNews: data.articles[0],
-      news: data.articles.slice(1)
+      firstNews: data.results[0],
+      news: data.results.slice(1)
     }
     return returnData
   }
