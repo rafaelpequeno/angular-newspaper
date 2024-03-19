@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NewsService {
-  apiKey: string = '4da126381a5b4bbe9f03ce51bd6e5792'
+  apiKey: string = 'd8f5990ae95a4af6a6f89f06ec38a250'
   subject: string = 'brasil';
 
 
